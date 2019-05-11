@@ -1775,7 +1775,11 @@ input, select, textarea {
 		width: -ms-max-content;
 		width: max-content;
 		margin-bottom: 2em;
+		position: relative;
+		overflow: hidden;
 	}
+
+	
 
 		header.major > :first-child {
 			margin-bottom: 0;
@@ -3929,3 +3933,71 @@ input, select, textarea {
 			opacity: 1;
 			visibility: visible;
 		}
+
+		.carousel {
+
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: row;
+			height: 500px;
+			position: relative;
+			overflow: hidden;
+			margin-top: 50px;
+			
+			}
+			
+			
+			.left-button, .right-button {
+				display: flex;
+				justify-content: center;
+				flex-direction: row;
+				font-size: 40px;
+				border-radius: 50%;
+				position: absolute;
+				width: 50px;
+				height: 50px;
+				cursor: pointer;
+				border: 1px solid black;
+				opacity: .8;
+				background-color: #ffffff;
+			
+			}
+			
+			.left-button {
+			  top: 50%; 
+			  left: 25px;
+			  transform: translate(0, -50%);
+			}
+			.right-button {
+			  top: 50%; 
+			  right: 25px;
+			  transform: translate(0, -50%);
+			}
+			.carousel .carouselImg {
+			  width: 100%;
+			  display: none;
+			}
+			
+			.carousel .bg{
+			  height: 680px;
+			  display: flex;
+			  justify-content: center;
+			  align-content: center;
+			  // background-image: url('../img/building1.jpg');
+			  // background-size: 100%;
+			  overflow: hidden;
+			  
+			  //  background-color:black;
+			  
+			}
+			  .carousel .projectH{
+				margin-top: 300px;
+				font-size: 7rem;
+				font-weight: bold;
+				text-align: center;
+				opacity: .8;
+				color: white;
+			  }
+			
